@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+* {
+	padding : 0;
+	margin : 0;
+}
+body {
+	background-color : lightyellow;
+}
+.clear {
+		clear : both;
+}
+header {
+	width : 1000px;
+	height : 100px;
+	margin-top : 10px;
+	border : dashed 3px #ff0000;
+}
+#logo {
+	margin : 20px 260px;
+	color : blue;
+	font-size : 40px;
+}
+#top {
+	float : right;
+	margin : 30px 20px 0 0;
+}
+nav {
+		width : 1000px;
+		height : 50px;
+		margin-top : 10px;
+		border : dotted 5px #abcdef;
+	}
+nav li {
+		display : inline;
+		margin : 110px;
+}
+li {
+	list-style-type : none;
+}
+section {
+		float : left;
+		margin-top : 10px;
+		border : solid 1px #cccccc;
+}
+aside {
+		float : right;
+		margin-left : 30px; 
+		margin-top : 10px;
+		border : solid 2px #00ff00;
+		padding-left : 25px;
+		padding-right : 25px;
+}
+aside li {
+		margin-bottom : 20px;
+		color : brown;
+}
+footer {
+		width : 1000px;
+		height : 100px;
+		margin-top : 10px;
+		border : solid 1px #cccccc;
+}
+#address {
+		float : left;
+		margin : 30px 0 0 20px;
+		color : magenta;
+}
+#customer {
+		float : right;
+		margin : 30px 0 0 180px;
+}
+#page {
+		width : 1000px;
+		margin : auto;
+}
+	</style>
+	<title></title>
+</head>
+<body>
+	<div id='page'>
+<header>
+		<div id='logo'>
+			★소소한 떡볶이 이야기★
+		</div>
+</header>
+		<div class='clear'></div> <!-- float 속성 해제 -->
+			<nav>
+					<ul>
+							<li><b>떡볶이란?</b></li>
+							<li><b>떡볶이 가게 이름</b></li>
+							<li><b>떡볶이 종류</b></li>
+					</ul>
+			</nav>
+<div class='clear'></div> <!-- float 속성 해제 -->			
+<section>
+				<img src='./image/1.jpg'><img src='./image/2.jpg'><img src='./image/3.jpg'>
+</section>
+	<aside>
+		<ul>
+					<li>이게뭔지</li>
+					<li>궁금하지?</li>
+					<li>나도몰라..</li>
+		</ul>
+	</aside>
+<section class='clear'>
+				<b>"사실.. 나는 떡볶이를 좋아하는 편은 아니지만..<br> 이 세상에 살고있는 모든 떡볶이를 좋아하는 사람들을 위해서 나는 이 페이지를 만들어 보이겠어!"<b>
+</section>
+
+			<div class='clear'></div>
+<footer>
+		<div id='address'>
+			주최 : 어디에 사는 주인장<br>
+			주관 : 주인장을 제외한 떡볶이를 좋아하는 모든 사람들
+		</div>
+		<div id='customer'>
+				
+			</div>
+</footer>
+</div>
+</body>
+</html>
