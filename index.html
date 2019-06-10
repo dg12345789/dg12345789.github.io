@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
 	<style>
 <meta charset="utf-8">
 * {
@@ -41,6 +40,24 @@ nav li {
 li {
 	list-style-type : none;
 }
+.dropdown {
+	display : inline-block;
+}
+.dropdownContents {
+		display : none;
+		background-color : lightyellow;
+		position : absolute;
+		border : solid 1px #000000;
+		width : 400px;
+}
+.dropdown:hover .dropdownContents {
+		display : block;
+	}
+ul
+{
+	display : inline;
+	margin : -20px;
+}
 section {
 		float : left;
 		margin-top : 10px;
@@ -51,10 +68,11 @@ aside {
 		margin-left : 30px; 
 		margin-top : 10px;
 		border : solid 2px #00ff00;
-		padding-right : 30px;
+		padding-left : 25px;
+		padding-right : 25px;
 }
 aside li {
-		margin-bottom : 20px;
+		margin-bottom : 10px;
 		color : brown;
 }
 footer {
@@ -77,7 +95,9 @@ footer {
 		margin : auto;
 }
 	</style>
+	<head>
 	<title></title>
+
 </head>
 <body>
 	<div id='page'>
@@ -86,15 +106,35 @@ footer {
 			★소소한 떡볶이 이야기★
 		</div>
 </header>
-		<div class='clear'></div> <!-- float 속성 해제 -->
+		<div class='clear'></div>
 			<nav>
 					<ul>
-							<li><b>떡볶이란?</b></li>
-							<li><b>떡볶이 가게 이름</b></li>
+							<div class="dropdown">
+							<li><b>소소한 이야기</b></li>
+							<div class="dropdownContents">
+							<a href="Practice.html"><li>떡볶이란 무엇인가</li></a>
+							<a href="Practiceo.html"><li>떡볶이 탄생비화</li></a>
+							<a href="Practicet.html"><li>떡볶이 만드는 법</li></a>
+							</div>
+							</div>
+					</ul>
+					<ul>
+							<div class="dropdown">
+							<li><b>떡뽀끼?</b></li>
+							<div class="dropdownContents">
+							<li>떡볶이 맛집 best 10</li></a>
+							<li>떡볶이 브랜드</li>
+
+					</ul>
+					<ul>
+							<div class="dropdown">
 							<li><b>떡볶이 종류</b></li>
+							<div class="dropdownContents">
+							<li>주인장이 잘 먹는</li>
+							<li>주인장이 잘 못먹는</li>
 					</ul>
 			</nav>
-<div class='clear'></div> <!-- float 속성 해제 -->			
+<div class='clear'></div>		
 <section>
 				<img src='./image/1.jpg'><img src='./image/2.jpg'><img src='./image/3.jpg'>
 </section>
@@ -103,10 +143,11 @@ footer {
 					<li>이게뭔지</li>
 					<li>궁금하지?</li>
 					<li>나도몰라..</li>
+					<li>의미없어..</li>
 		</ul>
 	</aside>
 <section class='clear'>
-				<b>"사실.. 나는 떡볶이를 좋아하는 편은 아니지만..<br> 이 세상에 살고있는 모든 떡볶이를 좋아하는 사람들을 위해서 나는 이 페이지를 만들어 보이겠어!"<b>
+				<b>"사실.. 나는 떡볶이를 크게 좋아하는 편은 아니지만..<br> 이 세상에 살고있는 모든 떡볶이를 좋아하는 사람들을 위해서 나는 이 페이지를 만들어 보이겠어!"<b>
 </section>
 
 			<div class='clear'></div>
