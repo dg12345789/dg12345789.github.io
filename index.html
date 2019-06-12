@@ -57,14 +57,16 @@ section {
 }
 aside {
 		float : right;
-		margin-left : 30px; 
-		margin-top : 10px;
-		padding-left : 25px;
-		padding-right : 25px;
+		margin : auto;
+
 }
 aside li {
-		margin-bottom : 10px;
-		color : brown;
+		margin : auto;
+		color : brown
+
+}
+aside li:active {
+		background-color : white;
 }
 footer {
 		width : 1000px;
@@ -84,12 +86,24 @@ footer {
 		width : 1000px;
 		margin : auto;
 }
+#backgrad {
+	height : 969px;
+	background-image : linear-gradient(to top, lightpink, white);
+}
+a {
+	text-decoration : none;
+	color : black;
+}
+a:visited
+{
+	color : none;
+}
 	</style>
 	<head>
 	<title></title>
 
 </head>
-<body>
+<body id="backgrad">
 	<div id='page'>
 <header>
 		<div id='logo'>
@@ -130,10 +144,8 @@ footer {
 
 	<aside>
 		<ul>
-					<li>이게뭔지</li>
-					<li>궁금하지?</li>
-					<li>나도몰라..</li>
-					<li>의미없어..</li>
+					<a href="index.html"><li>Home</li></a>
+					<li>Watch This!</li>
 		</ul>
 	</aside>
 <section class='clear'>
