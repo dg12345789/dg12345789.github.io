@@ -26,11 +26,11 @@ header {
 nav {
 		width : 1000px;
 		height : 50px;
-		margin-top : 10px;
+		margin : auto;
 	}
 nav li {
 		display : inline;
-		margin : 110px;
+		margin : 200px;
 }
 li {
 	list-style-type : none;
@@ -41,11 +41,22 @@ li {
 .dropdownContents {
 		display : none;
 		position : absolute;
-		width : 400px;
+		width : 570px;
 }
 .dropdown:hover .dropdownContents {
 		display : block;
 	}
+.dropdown1 {
+
+}
+.dropdownContents1 {
+		display : none;
+		position : absolute;
+}
+.dropdown1:hover .dropdownContents1 {
+		display : block;
+	}
+
 ul
 {
 	display : inline;
@@ -56,14 +67,10 @@ section {
 		margin-top : 10px;
 }
 aside {
-		float : right;
-		margin : auto;
-
+		float : right
 }
 aside li {
-		margin : auto;
 		color : brown
-
 }
 aside li:active {
 		background-color : white;
@@ -74,9 +81,8 @@ footer {
 		margin-top : 10px;
 }
 #address {
-		float : left;
-		margin : 30px 0 0 20px;
-		color : magenta;
+		float : right;
+		margin : 30px 0 0px;
 }
 #customer {
 		float : right;
@@ -92,11 +98,11 @@ footer {
 }
 a {
 	text-decoration : none;
-	color : black;
+	color : violet;
 }
 a:visited
 {
-	color : none;
+	color : blueviolet;
 }
 	</style>
 	<head>
@@ -127,25 +133,21 @@ a:visited
 							<div class="dropdownContents">
 							<a href="1.html"><li>떡볶이 맛집 best 5</li></a>
 							<a href="2.html"><li>떡볶이란 무엇인가?</li></a>
-
-					</ul>
-					<ul>
-							<div class="dropdown">
-							<li><b>떡볶이 종류</b></li>
-							<div class="dropdownContents">
-							<a href="3.html"><li>주인장이 잘 먹는</li></a>
-							<a href="4.html"><li>주인장이 잘 못먹는</li></a>
 					</ul>
 			</nav>
-<div class='clear'></div>		
-<section><img src='./image/1.jpg'></section>
-<section><img src='./image/2.jpg'></section>
-<section><img src='./image/3.jpg'></section>
-
+<div class='clear'></div>
+<p>
+	<section><img src="./image/24.jpg"></section>
+</p>
 	<aside>
 		<ul>
-					<a href="index.html"><li>Home</li></a>
-					<li>Watch This!</li>
+					<div class="dropdown1">
+					<li>(???)</li>
+					<div class="dropdownContents1">
+					<li><a href="3.html">구엑</a></li>
+					<li><a href="4.html">메롱</a></li>
+					</div>
+					</div>
 		</ul>
 	</aside>
 <section class='clear'>
@@ -155,8 +157,8 @@ a:visited
 			<div class='clear'></div>
 <footer>
 		<div id='address'>
-			주최 : 어디에 사는 주인장<br>
-			주관 : 주인장을 제외한 떡볶이를 좋아하는 모든 사람들
+			<b>주최 : 어디에 사는 주인장</b><br>
+			<b>주관 : 주인장을 제외한 떡볶이를 좋아하는 모든 사람들</b>
 		</div>
 		<div id='customer'>
 				
